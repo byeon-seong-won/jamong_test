@@ -629,11 +629,10 @@ section.sc-attend .ser-inner {
     content: '';
     position: absolute;
     top: 0;
-    left: 100%;
+    right: 0;
     background: url(../img/quiz-blind.png) no-repeat center / 100%;
-    width: 291px;
+    width: 150px;
     height: 100%;
-    margin-left: -150px;
     z-index: 10;
     transform: rotate(180deg);
 }
@@ -886,10 +885,10 @@ section.sc-attend .ser-inner {
 .review .sc-cont01 .thumb-area::after {
     content: '';
     position: absolute;
-    left: 100%;
+    right: 0;
     top: 0;
     margin-left: -100px;
-    width: 291px;
+    width: 150px;
     height: 100%;
     background: url(../img/review-blind.png) no-repeat center / 100%;
     transform: rotate(180deg);
@@ -998,11 +997,10 @@ section.sc-attend .ser-inner {
     background: url(../img/review-blind.png) no-repeat center / 100%;
     position: absolute;
     height: 100%;
-    width: 291px;
+    width: 150px;
     top: 0;
-    left: 100%;
+    right: 0;
     transform: rotate(180deg);
-    margin-left: -100px;
 }
 .review .sc-cont03 .col-left {
     z-index: 10;
