@@ -1,0 +1,191 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+/* 자몽 , 서비스 소개 모두 */
+.sub section > div {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+
+
+/* --------------------- 서비스 소개페이지 --------------------- */
+
+section:not(.sc-visual) .ser-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 158px 83px;
+}
+/* section .inner > div {
+    flex: 1;
+} */
+
+
+/* 비주얼 */
+.sc-visual {
+    margin-top: 233px;
+    margin-bottom: 103px;
+}
+.sc-visual .inner01 {
+    margin: 0 auto;
+    width: 50%;
+}
+.sc-visual .img-box {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 89px;
+}
+.sc-visual .img-box img:nth-child(1) {
+    width: 54px;
+}
+.sc-visual .img-box img:nth-child(2) {
+    width: 320px;
+}
+.sc-visual .txt-box {
+    color: #555555;
+    text-align: center;
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.sc-visual .txt-box:last-of-type {
+    margin-top: 40px;
+}
+.sc-visual .btn-box {
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.btn-box button {
+    padding: 21px 23px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 59px;
+}
+
+.every .sc-visual .btn-box button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    background: #28BBB0;
+    color: #fff;
+}
+.every .sc-visual .btn-box button:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    background: url(../img/ico-google.png) no-repeat center / 100%;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+.every .sc-visual .btn-box button:nth-child(2) {
+    border: 1px solid #28BBB0;
+    color: #28BBB0;
+}
+.every .sc-visual .btn-box button:nth-child(2)::before {
+    content: '';
+    display: inline-block;
+    background: url(../img/ico-apple.png) no-repeat center / 100%;
+    width: 18px;
+    height: 21px;
+    margin-right: 6px;
+}
+.quiz .sc-visual .btn-box button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F77514;
+    color: #F77514;
+}
+.quiz .sc-visual .btn-box button::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/ico-down-quiz.png) no-repeat center / 100%;
+}
+.review .sc-visual .btn-box button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E50B14;
+    color: #E50B14;
+}
+.review .sc-visual .btn-box button::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/ico-down-review.png) no-repeat center / 100%;
+}
+
+
+
+
+/* 섹션 타이틀 */
+.headline {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+}
+.comp .headline {
+    color: #F16365;
+}
+.every .headline {
+    color: #28BBB0;
+}
+.quiz .headline {
+    color: #F77514;
+}
+.review .headline {
+    color: #E50B14;
+}
+
+.title {
+    margin-top: 28px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    color: #141414;
+    letter-spacing: -0.02em;
+}
+
+
+.aniEffect {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.aniEffect-main {
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+.aniEffect-sh,
+.aniEffect-tit {
+    transform: translateY(100px);
+}
+
+.aniEffect-maintit {
+    opacity: 0;
+    transform: translateY(150px); 
+    transition: .8s;
+}
+.aniEffect-maintit.click {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
