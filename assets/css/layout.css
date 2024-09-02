@@ -222,3 +222,10 @@ footer .col-right .customer-area .time:last-child {
     color: #AFB1B4;
 }
 
+footer small {
+    display: block;
+    margin-top: 13px;
+    color: #AFB1B4;
+    font-size: 14px;
+    font-weight: 400;
+}       
