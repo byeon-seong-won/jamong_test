@@ -17,7 +17,6 @@ body {
     color: #000;
     word-break: keep-all;
     font-weight: 500;
-    overflow: hidden;
 }
 
 /* header,footer, #wrapper, .every, .review, .quiz {
