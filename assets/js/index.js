@@ -11,7 +11,10 @@
 
     // --------------- 전체 부드러운 스크롤 --------------- 
     const lenis = new Lenis({
-      duration: 1,
+      duration: 2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      wrapper: document.querySelector('.lenis-wrap'),
+      content: document.querySelector('.inner-lenis'),
     })
     lenis.on('scroll', (e) => {
       console.log(e)
@@ -100,7 +103,8 @@
     duration: 0.8,
     repeat: -1, 
     yoyo: true, 
-    ease: "power1.inOut" 
+    ease: "power1.inOut", 
+    scroller: '.lenis-wrap', 
   });
 
 
@@ -190,7 +194,7 @@
       gsap.fromTo(effect, 
         {
           opacity: 0,
-          y: 100
+          y: 200
         }, 
         {
           opacity: 1,
@@ -202,6 +206,7 @@
             start: "top 80%",  
             end: "bottom 60%", 
             scrub: true, 
+            scroller: '.lenis-wrap', 
           }
         }
       );
@@ -210,7 +215,7 @@
     gsap.utils.toArray('.gsap').forEach(effect => {
       gsap.fromTo(effect, 
         {
-          y: 150
+          y: 200
         }, 
         {
           y: 0,
@@ -221,6 +226,7 @@
             start: "top 80%",  
             end: "bottom 60%", 
             scrub: true, 
+            scroller: '.lenis-wrap', 
           }
         }
       );
@@ -256,6 +262,7 @@
             start: "top 80%",  
             end: "bottom 60%", 
             scrub: true, 
+            scroller: '.lenis-wrap', 
           }
         }
     );
@@ -298,6 +305,7 @@
             start: "-40% 70%",  
             end: "bottom 60%", 
             scrub: true, 
+            scroller: '.lenis-wrap', 
           }
         }
     );
@@ -314,6 +322,7 @@
       start: "10% 80%",       
       end: "top 30%",         
       scrub: true,
+      scroller: '.lenis-wrap', 
     },
     x: -300,                 
     opacity: 0,              
@@ -327,6 +336,7 @@
       start: "10% 80%",       
       end: "top 30%",         
       scrub: true,
+      scroller: '.lenis-wrap', 
     },
     x: 300,                  
     opacity: 0,              
@@ -340,6 +350,7 @@
       start: "10% 100%",    
       end: "top 50%",         
       scrub: true,
+      scroller: '.lenis-wrap', 
     },
     x: -300,                 
     opacity: 0,    
@@ -352,7 +363,8 @@
       trigger: ".sc-vision .aniEffect-right", 
       start: "10% 100%",      
       end: "top 50%",         
-      scrub: true             
+      scrub: true,
+      scroller: '.lenis-wrap',              
     },
     x: 300,                
     opacity: 0,        

@@ -181,7 +181,7 @@ section:not(.sc-visual) .ser-inner {
 
 .aniEffect {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(200px);
 }
 .aniEffect-main {
     opacity: 0;

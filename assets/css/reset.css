@@ -25,3 +25,21 @@ body {
 
 
 
+html {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.lenis-wrap {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
