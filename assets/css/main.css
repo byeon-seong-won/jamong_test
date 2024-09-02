@@ -30,11 +30,16 @@ section .info-area .logo-box {
   gap: 15px;
 }
 section .info-area .logo-box img:nth-child(1) {
-  width: 47px;
+  width: 30px;
 }
 section .info-area .logo-box img:nth-child(2) {
   width:150px;
 }
+section.quiz .info-area .logo-box img:nth-child(2),
+section.review .info-area .logo-box img:nth-child(2) {
+  margin-top: -6px;
+}
+
 
 
 section .info-area h2 {
@@ -45,10 +50,11 @@ section .info-area h2 {
 }
 section .info-area p {
   margin-top: 29px;
-  color: #666666;
+  color: #989898;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 34px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.05rem;
 }
 
 

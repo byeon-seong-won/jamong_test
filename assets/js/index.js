@@ -1,5 +1,21 @@
 
 
+
+
+  // 구버전으로 돌리기
+    // JavaScript to check screen width and redirect if necessary
+    window.onload = function() {
+      // Get the screen width
+      var screenWidth = window.innerWidth;
+      // Check if the screen width is less than 1440 pixels
+      if (screenWidth < 1680) {
+          // Replace current page with the old version of the homepage
+          window.location.replace("/v1/index.html");
+      }
+  };
+
+
+
     // --------------- GSAP 공통 효과 --------------- 
     gsap.defaults({
       ease:"none"
@@ -48,11 +64,11 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    speed: 1500,
-    autoplay: {
-        delay: 7000,           
-        disableOnInteraction: false, 
-    },
+    // speed: 1500,
+    // autoplay: {
+    //     delay: 7000,           
+    //     disableOnInteraction: false, 
+    // },
     on: {
       slideChangeTransitionStart: function() {
           resetProgressBar();
@@ -166,11 +182,11 @@
 
   // 홈페이지 바로가기 애니메이션
   gsap.to(".link-home", {
-    y: -10, 
+    y: -20, 
     duration: 1,
     repeat: -1, 
     yoyo: true, 
-    ease: "power1.inOut", 
+    ease: "power4.inOut", 
     scroller: '.lenis-wrap', 
   });
 

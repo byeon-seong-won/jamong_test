@@ -46,3 +46,9 @@
   src: url('../font/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
 }
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+}
+

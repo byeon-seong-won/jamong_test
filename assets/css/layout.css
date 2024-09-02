@@ -70,12 +70,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    height: 63px;
-    border-radius: 16px;
+    width: 102px;
+    height: 50px;
+    border-radius: 14px;
     color: #2D2D2D;
     background: #E8EDF5;
-    font-size: 22px;
+    font-size: 19px;
     transition: 0.3s;
 }
 #header .link-area a:hover {

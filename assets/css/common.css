@@ -65,7 +65,7 @@ section:not(.sc-visual) .ser-inner {
     margin-top: 15px;
 }
 .every .sc-visual .img-box img:nth-child(1) {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 
@@ -75,11 +75,12 @@ section:not(.sc-visual) .ser-inner {
     color: #555555;
     text-align: center;
     font-size: 23px;
-    line-height: 36px;
-    font-weight: 500;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
 }
 .sc-visual .txt-box:last-of-type {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .sc-visual .btn-box {
     margin-top:80px;
@@ -92,14 +93,14 @@ section:not(.sc-visual) .ser-inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 59px;
 }
 .every .sc-visual .btn-box a:nth-child(1) {
     background: #28BBB0;
     color: #fff;
     width: 199px;
-    height: 68px;
+    height: 66px;
 }
 .every .sc-visual .btn-box a:nth-child(1)::before {
     content: '';
@@ -112,7 +113,7 @@ section:not(.sc-visual) .ser-inner {
 .every .sc-visual .btn-box a:nth-child(2) {
     border: 1px solid #28BBB0;
     width: 178px;
-    height: 68px;
+    height: 66px;
     color: #28BBB0;
 }
 .every .sc-visual .btn-box a:nth-child(2)::before {
@@ -127,7 +128,7 @@ section:not(.sc-visual) .ser-inner {
     border: 1px solid #F77514;
     color: #F77514;
     width: 279px;
-    height: 68px;
+    height: 66px;
 }
 .quiz .sc-visual .btn-box a::after {
     content: '';
@@ -143,7 +144,7 @@ section:not(.sc-visual) .ser-inner {
     border: 1px solid #E50B14;
     color: #E50B14;
     width: 279px;
-    height: 68px;
+    height: 66px;
 }
 .review .sc-visual .btn-box a::after {
     content: '';
