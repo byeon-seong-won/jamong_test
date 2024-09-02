@@ -261,6 +261,10 @@
 
 
 /* .sc-attend */
+section.sc-attend {
+    background: #FCFCFC;
+}
+
 section.sc-attend .ser-inner {
     padding-top: 150px;
     padding-bottom: 0;
@@ -553,9 +557,11 @@ section.sc-attend .ser-inner {
     bottom: 31px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0px 0px 20px 0px #72D4CD;
+    transition: 0.5s;
 }
-
+.sc-cash .link-home:hover {
+    box-shadow: 0px 0px 25px 0px #72D4CD;
+}
 
 
 
@@ -646,6 +652,9 @@ section.sc-attend .ser-inner {
 
 
 /* sc-cont02 */
+.quiz .sc-cont02 {
+    background: #FCFCFC;
+}
 .quiz .sc-cont02 .ser-inner {
     padding-top: 152px;
     padding-left: 142px;
@@ -771,6 +780,9 @@ section.sc-attend .ser-inner {
 
 
 /* sc-cont04 */
+.quiz .sc-cont04 {
+    background: #FCFCFC;
+}
 .quiz .sc-cont04 .ser-inner {
     padding: 130px 70px 0 0;
 }
@@ -911,6 +923,9 @@ section.sc-attend .ser-inner {
 
 
 /* sc-cont02 */
+.review .sc-cont02 {
+    background-color: #FEFEFE;
+}
 .review .sc-cont02 .ser-inner {
     padding: 96px 216px 83px 278px;
 }

@@ -158,13 +158,23 @@
 
 
   const snsSlide = new Swiper('.snsSlide', {
-    autoplay: {
-      disableOnInteraction: false,
-    },
     slidesPerView: 'auto', 
     spaceBetween: 13, 
     speed: 600,
   });
+
+
+  // 홈페이지 바로가기 애니메이션
+  gsap.to(".link-home", {
+    y: -10, 
+    duration: 1,
+    repeat: -1, 
+    yoyo: true, 
+    ease: "power1.inOut", 
+    scroller: '.lenis-wrap', 
+  });
+
+
 
 
 
