@@ -36,7 +36,7 @@ section:not(.sc-visual) .ser-inner {
 /* 비주얼 */
 .sc-visual {
     margin-top: 233px;
-    margin-bottom: 103px;
+    margin-bottom: 120px;
 }
 .sc-visual .inner01 {
     margin: 0 auto;
@@ -66,7 +66,7 @@ section:not(.sc-visual) .ser-inner {
     margin-top: 40px;
 }
 .sc-visual .btn-box {
-    margin-top: 47px;
+    margin-top:80px;
     display: flex;
     align-items: center;
     justify-content: center;

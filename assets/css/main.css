@@ -40,7 +40,7 @@ section .info-area .logo-box img:nth-child(2) {
 section .info-area h2 {
   margin-top: 35px;
   font-size: 44px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 60px;
 }
 section .info-area p {
@@ -67,7 +67,7 @@ section .thumb-area > div > img {
 section .thumb-area .detail {
   width: 450px;
   position: absolute;
-  top: 34%;
+  top: 35%;
   right: 0;
   margin-right: -8%;
 }
