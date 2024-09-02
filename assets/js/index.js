@@ -10,7 +10,10 @@
 
 
     // --------------- 전체 부드러운 스크롤 --------------- 
-    // const lenis = new Lenis()
+    // const lenis = new Lenis({
+    //   duration: 2,
+    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    // })
     // lenis.on('scroll', (e) => {
     //   console.log(e)
     // })
@@ -21,7 +24,28 @@
     // gsap.ticker.lagSmoothing(0)
 
 
+    document.addEventListener("DOMContentLoaded", () => {
+      const lenis = new Lenis({
+        smooth: true,
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    });
 
+    const lenis = new Lenis({
+      smooth: true,
+      duration: 1.2, // 애니메이션 지속 시간
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing 함수
+    });
+
+
+
+
+
+    
 
 
 
