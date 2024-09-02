@@ -38,11 +38,11 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        speed: 2000,
-        delay: 8000,           
-        disableOnInteraction: false, 
-    },
+    speed: 1500,
+    // autoplay: {
+    //     delay: 7000,           
+    //     disableOnInteraction: false, 
+    // },
     on: {
       slideChangeTransitionStart: function() {
           resetProgressBar();
@@ -79,26 +79,22 @@
   function resetGifAnimation() {
     const $gif = $('section .thumb-area > div > img.video');
     const src = $gif.attr('src'); 
-    $gif.attr('src', ''); 
-    $gif.attr('src', src); 
+    gif.attr('src', '');
+    $gif.attr('src', src)
   }
   function quizAni() {
     const $gif = $('section .thumb-area > div > img.video');
     $gif.css('display', 'block');
-    resetGifAnimation(); 
   }
 
-
-
-
-    // reviewclick 애니메이션
-    gsap.to(".ico-coin", {
-      y: -13, 
-      duration: 0.8,
-      repeat: -1, 
-      yoyo: true, 
-      ease: "power1.inOut" 
-    });
+  // reviewclick 애니메이션
+  gsap.to(".ico-coin", {
+    y: -13, 
+    duration: 0.8,
+    repeat: -1, 
+    yoyo: true, 
+    ease: "power1.inOut" 
+  });
 
 
 
@@ -109,7 +105,7 @@
   // 하단 prgress-bar
   function startProgressBar() {
     const progressBar = document.querySelector('.progress-bar');
-    progressBar.style.transition = 'width 8s linear';
+    progressBar.style.transition = 'width 7s linear';
     progressBar.style.width = '100%';
   }
 
@@ -229,6 +225,10 @@
 
   // 자몽랩 소개 이미지
     $('.aniEffect-maintit').addClass('click');
+    setTimeout(function() {
+      $('.aniEffect-sh').addClass('click');
+    }, 500);
+    
 
 
 
@@ -254,28 +254,26 @@
     );
   });
 
-
-  gsap.utils.toArray('.comp .aniEffect-sh').forEach(effect => {
-    gsap.fromTo(effect, 
-        {
-          opacity: 0,
-          y: 100
-        }, 
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: effect,
-            start: "-100% 48%",  
-            end: "bottom 60%", 
-            scrub: true, 
-          }
-        }
-    );
-  });
-
+  // gsap.utils.toArray('.comp .aniEffect-sh').forEach(effect => {
+  //   gsap.fromTo(effect, 
+  //       {
+  //         opacity: 0,
+  //         y: 100
+  //       }, 
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 1,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: effect,
+  //           start: "-100% 48%",  
+  //           end: "bottom 60%", 
+  //           scrub: true, 
+  //         }
+  //       }, "main"
+  //   );
+  // });
 
   gsap.utils.toArray('.comp .aniEffect-tit').forEach(effect => {
     gsap.fromTo(effect, 

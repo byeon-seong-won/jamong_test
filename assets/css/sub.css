@@ -15,10 +15,17 @@
     font-weight: bold;
 }
 
+/* .sc-ident::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: url(../img/jamong-01-bg-03.png) no-repeat center / 100%;
+} */
 .sc-ident {
     position: relative;
-    background: url(../img/jamong-01-bg-03.png) no-repeat bottom right / 1300px 1161px;
+    background: url(../img/jamong-01-bg-03.png) no-repeat center / 100%;
     margin-top: 172px;
+    background-position-y: 35%;
     padding-bottom: 280px;
     z-index: 0;
 }
@@ -27,9 +34,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url(../img/jamong-01-bg01.png) no-repeat center / 100%;
+    background: linear-gradient(to top, #fff 70%, transparent);
+    /* background: url(../img/jamong-01-bg01.png) no-repeat center / 100%; */
     width: 100%;
-    height: 150px;
+    height: 135px;
     z-index: 1;
 }
 .sc-ident .inner {
@@ -502,6 +510,7 @@ section.sc-attend .ser-inner {
 .every .sc-cash .ser-inner {
     padding-left: 70px;
     padding-right: 70px;
+    position: relative;
 }
 .sc-cash .ser-inner > div {
     flex: 1;
@@ -529,7 +538,22 @@ section.sc-attend .ser-inner {
 .sc-cash .col-right .coupon-box img:not(:first-child) {
     margin-top: -15px;
 }
-
+.sc-cash .link-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 68px;
+    position: absolute;
+    background: #28BBB0;
+    color: #fff;
+    border-radius: 59px;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -870,6 +894,16 @@ section.sc-attend .ser-inner {
     background: url(../img/review-blind.png) no-repeat center / 100%;
     transform: rotate(180deg);
 }
+.review .sc-cont01 .thumb-area img:nth-child(2) {
+    position: absolute;
+    width: 89px;
+    bottom: 150px;
+    left: 50%;
+    margin-left: 210px;
+    transform: rotate(10deg);
+}
+
+
 
 
 
@@ -895,13 +929,13 @@ section.sc-attend .ser-inner {
     left: 50%;
     bottom: 125px;
     transform: translateX(-50%);
-    width: 404px;
+    width: 424px;
 }
 .review .sc-cont02 .col-left .review-box img {
     width: 100%;
 }
 .review .sc-cont02 .col-left .review-box img:nth-child(2) {
-    margin-top: -32px;
+    margin-top: -38px;
 }
 .review .sc-cont02 .col-left .review-heart {
     position: absolute;
@@ -1014,13 +1048,15 @@ section.sc-attend .ser-inner {
     margin: 0 auto;
     overflow: hidden;
     width: 1140px;
+    height: 671px;
 }
 .sc-cont .map iframe {
     display: block;
     width: 100%;
+    height: 100%;
 }
 .sc-cont .map-area p {
-    margin-top: 20px;
+    margin-top: 31px;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
@@ -1045,10 +1081,9 @@ section.sc-attend .ser-inner {
 .sc-cont .map-area em {
     margin-right: 10px;
 }
-
-
 .sc-cont .customer-area {
-    margin-top: 83px;
+    text-align-last: left;
+    margin-top: 95px;
     padding-left: 800px;
     padding-bottom: 88px;
 }
@@ -1070,7 +1105,7 @@ section.sc-attend .ser-inner {
     background: url(../img/ico-cont-tel.png) no-repeat center / 100%;
 }
 .sc-cont .customer-area a:nth-child(2) {
-    margin-top: 33px;
+    margin-top: 42px;
 }
 .sc-cont .customer-area a:nth-child(2):before {
     width: 30px;

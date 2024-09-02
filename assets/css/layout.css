@@ -6,7 +6,7 @@
 
 
 #wrapper {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 100%;
     height: 100vh;
@@ -78,6 +78,11 @@
     color: #2D2D2D;
     background: #E8EDF5;
     font-size: 22px;
+    transition: 0.3s;
+}
+#header .link-area a:hover {
+    background-color: #F16365;
+    color: #fff;
 }
 
 

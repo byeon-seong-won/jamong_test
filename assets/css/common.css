@@ -10,6 +10,7 @@
 /* 자몽 , 서비스 소개 모두 */
 .sub section > div {
     max-width: 1500px;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     width: 100%;
 }
@@ -59,7 +60,7 @@ section:not(.sc-visual) .ser-inner {
     text-align: center;
     font-size: 23px;
     line-height: 40px;
-    font-weight: bold;
+    font-weight: 500;
 }
 .sc-visual .txt-box:last-of-type {
     margin-top: 40px;
@@ -164,7 +165,6 @@ section:not(.sc-visual) .ser-inner {
     letter-spacing: -0.02em;
 }
 
-
 .aniEffect {
     opacity: 0;
     transform: translateY(100px);
@@ -173,18 +173,18 @@ section:not(.sc-visual) .ser-inner {
     opacity: 0;
     transform: translateY(200px);
 }
-
 .aniEffect-sh,
 .aniEffect-tit {
     transform: translateY(100px);
 }
-
-.aniEffect-maintit {
+.aniEffect-maintit,
+.aniEffect-sh {
     opacity: 0;
     transform: translateY(150px); 
     transition: .8s;
 }
-.aniEffect-maintit.click {
+.aniEffect-maintit.click,
+.aniEffect-sh.click {
     opacity: 1; 
     transform: translateY(0); 
 }

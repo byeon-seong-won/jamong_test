@@ -116,9 +116,9 @@ section .thumb-area > div > img.video {
   height: 610px;
   z-index: 0;
 }
-section .thumb-area > div > img.video.on {
-  display: block;
-}
+/* section .thumb-area > div > img.video.on {
+  opacity: 1;
+} */
 
 
 
@@ -259,7 +259,15 @@ section .thumb-area > div > img.video.on {
   .thumb-area>p.count {opacity: 0;right: 95px;}
 
 
-.thumb-area>img.money {width: 20px;height: 20px;position: absolute;top: 130px;right: 90px;opacity: 0;z-index: 0;}
+.thumb-area>img.money {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 130px;
+  right: 90px;
+  opacity: 0;
+  z-index: 0;
+}
 .thumb-area>img.money.money02 {top: 135px;right: 100px;}
 .thumb-area>img.money.money03 {top: 120px;right: 110px;}
 .thumb-area>img.money.effect {
@@ -277,39 +285,40 @@ section .thumb-area > div > img.video.on {
 .thumb-area>img.money.money02.effect {animation-delay:1.2s;}
 .thumb-area>img.money.money03.effect {animation-delay:1.4s;} 
   
-  @-webkit-keyframes rotateUp {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(100px) rotateX(0deg) translateZ(0px);
-      transform: perspective(300px) rotateX(0deg) translateZ(0px);
-    }
-    50% {opacity: 1;}
-    100% {
-      opacity: 0;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
-      -webkit-transform: perspective(100px) rotateX(180deg) translateZ(20px);
-      transform: perspective(300px) rotateX(180deg) translateZ(100px);
-    }
+@-webkit-keyframes rotateUp {
+  0% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: perspective(800px) rotateX(0deg) translateZ(0px);
+    transform: perspective(800px) rotateX(0deg) translateZ(0px);
   }
-  @keyframes rotateUp {
-    0% {
-      opacity: 0;
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(100px) rotateX(0deg) translateZ(0px);
-      transform: perspective(300px) rotateX(0deg) translateZ(0px);
-    }
-    50% {opacity: 1;}
-    100% {
-      opacity: 0;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
-      -webkit-transform: perspective(100px) rotateX(180deg) translateZ(20px);
-      transform: perspective(300px) rotateX(180deg) translateZ(100px);
-    }
+  50% {opacity: 1;}
+
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: rotateX(180deg) translateZ(100px);
+    transform: rotateX(180deg) translateZ(100px);
   }
+}
+@keyframes rotateUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateX(0deg) translateZ(0px);
+    transform: rotateX(0deg) translateZ(0px);
+  }
+  50% {opacity: 1;}
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: rotateX(180deg) translateZ(100px);
+    transform: rotateX(180deg) translateZ(100px);
+  }
+}
   /* <------ /////애니메이션//// ------->  */
 
 
@@ -368,7 +377,7 @@ section .thumb-area > div > img.video.on {
 
 
 
-.button-area button {
+.button-area a {
   display: inline-flex;
   align-items: center;
   background: #E8EDF5;
@@ -382,7 +391,7 @@ section .thumb-area > div > img.video.on {
   cursor: pointer;
   transition: background-color 0.4s ease;
 }
-.button-area button::after {
+.button-area a::after {
   content: '';
   display: inline-block;
   margin-left: 25px;
@@ -390,7 +399,7 @@ section .thumb-area > div > img.video.on {
   width: 47px;
   height: 47px;
 }
-.button-area button:hover {
+.button-area a:hover {
   /* background-size: 200% 100%;
   background-image: linear-gradient(to right, #F16365 50%, #E8EDF5 20%);
   background-position: 100% 0;  */
