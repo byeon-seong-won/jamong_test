@@ -86,20 +86,20 @@ section:not(.sc-visual) .ser-inner {
     justify-content: center;
     gap: 12px;
 }
-.btn-box button {
+.btn-box a {
+    display: inline-block;
     padding: 21px 23px;
     font-size: 22px;
     font-weight: bold;
     border-radius: 59px;
 }
-
-.every .sc-visual .btn-box button:nth-child(1) {
+.every .sc-visual .btn-box a:nth-child(1) {
     display: flex;
     align-items: center;
     background: #28BBB0;
     color: #fff;
 }
-.every .sc-visual .btn-box button:nth-child(1)::before {
+.every .sc-visual .btn-box a:nth-child(1)::before {
     content: '';
     display: inline-block;
     background: url(../img/ico-google.png) no-repeat center / 100%;
@@ -107,11 +107,11 @@ section:not(.sc-visual) .ser-inner {
     height: 24px;
     margin-right: 6px;
 }
-.every .sc-visual .btn-box button:nth-child(2) {
+.every .sc-visual .btn-box a:nth-child(2) {
     border: 1px solid #28BBB0;
     color: #28BBB0;
 }
-.every .sc-visual .btn-box button:nth-child(2)::before {
+.every .sc-visual .btn-box a:nth-child(2)::before {
     content: '';
     display: inline-block;
     background: url(../img/ico-apple.png) no-repeat center / 100%;
@@ -119,13 +119,13 @@ section:not(.sc-visual) .ser-inner {
     height: 21px;
     margin-right: 6px;
 }
-.quiz .sc-visual .btn-box button:nth-child(1) {
+.quiz .sc-visual .btn-box a:nth-child(1) {
     display: flex;
     align-items: center;
     border: 1px solid #F77514;
     color: #F77514;
 }
-.quiz .sc-visual .btn-box button::after {
+.quiz .sc-visual .btn-box a::after {
     content: '';
     display: inline-block;
     margin-left: 4px;
@@ -133,13 +133,13 @@ section:not(.sc-visual) .ser-inner {
     height: 26px;
     background: url(../img/ico-down-quiz.png) no-repeat center / 100%;
 }
-.review .sc-visual .btn-box button:nth-child(1) {
+.review .sc-visual .btn-box a:nth-child(1) {
     display: flex;
     align-items: center;
     border: 1px solid #E50B14;
     color: #E50B14;
 }
-.review .sc-visual .btn-box button::after {
+.review .sc-visual .btn-box a::after {
     content: '';
     display: inline-block;
     margin-left: 4px;
