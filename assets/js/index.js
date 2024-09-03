@@ -3,16 +3,12 @@
 
 
   // 구버전으로 돌리기
-    // JavaScript to check screen width and redirect if necessary
-    window.onload = function() {
-      // Get the screen width
-      var screenWidth = window.innerWidth;
-      // Check if the screen width is less than 1440 pixels
-      if (screenWidth < 1680) {
-          // Replace current page with the old version of the homepage
-          window.location.replace("/v1/index.html");
-      }
-  };
+    // window.onload = function() {
+    //   var screenWidth = window.innerWidth;
+    //   if (screenWidth < 1680) {
+    //       window.location.replace("/v1/index.html");
+    //   }
+    // };
 
 
 
