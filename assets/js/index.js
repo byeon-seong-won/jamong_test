@@ -3,12 +3,14 @@
 
 
   // 구버전으로 돌리기
-    // window.onload = function() {
-    //   var screenWidth = window.innerWidth;
-    //   if (screenWidth < 1680) {
-    //       window.location.replace("/v1/index.html");
-    //   }
-    // };
+
+
+    window.onload = function() {
+      var screenWidth = window.innerWidth;
+      if (screenWidth < 1680) {
+          window.location.replace("/v1/index.html");
+      }
+    };
 
 
 
