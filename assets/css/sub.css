@@ -1053,7 +1053,6 @@ section.sc-attend .ser-inner {
     margin-top: 24px;
     letter-spacing: -0.02em;
 }
-
 .sc-cont {
     padding: 69px 80px 0;
 }
@@ -1087,10 +1086,13 @@ section.sc-attend .ser-inner {
     margin-right: 13px;
     background: url(../img/ico-map.png) no-repeat center / 100%;
 }
-.sc-cont em {
+.sc-cont em:nth-child(1) {
     color: #4B749C;
     font-weight: 600;
     display: inline-block;
+}
+.sc-cont a:not(:first-child) em:nth-child(1) {
+    width: 170px;
 }
 .sc-cont .map-area em {
     margin-right: 10px;
